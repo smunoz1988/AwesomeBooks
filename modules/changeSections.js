@@ -5,7 +5,7 @@ const sectionUno = document.getElementById('list');
 const sectionDos = document.getElementById('add-new');
 const sectionTres = document.getElementById('contact');
 
-const handleListBookClick = () => {
+const changeListBookClick = () => {
   sectionUno.style.display = 'block';
   sectionDos.style.display = 'none';
   sectionTres.style.display = 'none';
@@ -14,7 +14,7 @@ const handleListBookClick = () => {
   contactSection.style.color = 'black';
 };
 
-const handleAddNewSectionClick = () => {
+const changeAddNewSectionClick = () => {
   sectionUno.style.display = 'none';
   sectionDos.style.display = 'block';
   sectionTres.style.display = 'none';
@@ -23,7 +23,7 @@ const handleAddNewSectionClick = () => {
   contactSection.style.color = 'black';
 };
 
-const handleContactSectionClick = () => {
+const changeContactSectionClick = () => {
   sectionUno.style.display = 'none';
   sectionDos.style.display = 'none';
   sectionTres.style.display = 'flex';
@@ -32,8 +32,8 @@ const handleContactSectionClick = () => {
   contactSection.style.color = 'blue';
 };
 
-listBook.addEventListener('click', handleListBookClick);
-addNewSection.addEventListener('click', handleAddNewSectionClick);
-contactSection.addEventListener('click', handleContactSectionClick);
+listBook.addEventListener('click', changeListBookClick);
+addNewSection.addEventListener('click', changeAddNewSectionClick);
+contactSection.addEventListener('click', changeContactSectionClick);
 
-export { handleListBookClick, handleAddNewSectionClick, handleContactSectionClick };
+export { changeListBookClick, changeAddNewSectionClick, changeContactSectionClick };
