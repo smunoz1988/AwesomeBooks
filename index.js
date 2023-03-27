@@ -18,8 +18,10 @@ const currentDate = DateTime.now();
 
 document.getElementById('date').innerHTML = currentDate;
 
-/* eslint-disable */
+const listBook = document.getElementById('listBooks');
+const addNewSection = document.getElementById('addNewBook');
+const contactSection = document.getElementById('contactSection');
+
 listBook.addEventListener('click', changeListBookClick);
 addNewSection.addEventListener('click', changeAddNewSectionClick);
 contactSection.addEventListener('click', changeContactSectionClick);
-/* eslint-enable */
