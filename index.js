@@ -1,5 +1,6 @@
 import BooksList from './modules/booksList.js';
 import { changeListBookClick, changeAddNewSectionClick, changeContactSectionClick } from './modules/changeSections.js';
+import { now } from './modules/date.js';
 
 const booksList = new BooksList();
 const addButton = document.getElementById('add-book');
@@ -13,16 +14,9 @@ window.onload = () => {
   booksList.createContainer();
 };
 
-const currentDate = new Date();
-const options = {
-  month: 'long',
-  day: 'numeric',
-  year: 'numeric',
-  hour: 'numeric',
-  minute: 'numeric',
-};
+const currentDate = now;
 
-document.getElementById('date').innerHTML = currentDate.toLocaleDateString('en-US', options);
+document.getElementById('date').innerHTML = currentDate;
 
 /* eslint-disable */
 listBook.addEventListener('click', changeListBookClick);
