@@ -1,6 +1,6 @@
 import BooksList from './modules/booksList.js';
 import { changeListBookClick, changeAddNewSectionClick, changeContactSectionClick } from './modules/changeSections.js';
-import { now } from './modules/date.js';
+import { DateTime } from '../node_modules/luxon/src/luxon.js';
 
 const booksList = new BooksList();
 const addButton = document.getElementById('add-book');
@@ -14,7 +14,7 @@ window.onload = () => {
   booksList.createContainer();
 };
 
-const currentDate = now;
+const currentDate = DateTime.now();
 
 document.getElementById('date').innerHTML = currentDate;
 
