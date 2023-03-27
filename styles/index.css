@@ -1,0 +1,154 @@
+body {
+    padding: 1rem;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 95vh;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 0.2rem;
+    padding-left: 0.2rem;
+    border: 4px solid black;
+  }
+  
+  header p {
+    font-size: 1rem;
+    margin-left: 0.3rem;
+    margin-bottom: 1%;
+  }
+  
+  header ul {
+    display: inline-flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    font-size: 1rem;
+  }
+  
+  nav {
+    align-items: center;
+  }
+  
+  nav li {
+    margin: 0 0.5rem 0 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  #listBooks {
+    color: blue;
+  }
+  
+  #date {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1%;
+  }
+  
+  #add-new {
+    display: none;
+  }
+  
+  #addNewBook {
+    border-left: 2px black solid;
+    border-right: 2px black solid;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  #cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    border: 4px solid black;
+  }
+  
+  #cards li {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    list-style: none;
+  }
+  
+  #cards li:nth-child(even) {
+    background-color: rgb(138, 138, 138);
+  }
+  
+  .book-name {
+    margin: 1%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .removeBtn {
+    margin: 1%;
+    border: 4px solid black;
+    box-shadow: 5px 5px;
+    cursor: pointer;
+  }
+  
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    padding: 2%;
+  }
+  
+  form h2 {
+    text-align: center;
+  }
+  
+  form input {
+    margin: 1.5%;
+    border: 4px solid black;
+  }
+  
+  form button {
+    margin: 1.5%;
+    width: 15%;
+    min-width: 50px;
+    align-self: flex-end;
+    border: 4px solid black;
+    box-shadow: 5px 5px;
+    cursor: pointer;
+  }
+  
+  #validation {
+    text-align: center;
+  }
+  
+  #contact {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  footer {
+    border: 4px solid black;
+  }
+  
+  footer p {
+    margin: 1%;
+    margin-left: 1rem;
+  }
+  
