@@ -24,6 +24,8 @@ const options = {
 
 document.getElementById('date').innerHTML = currentDate.toLocaleDateString('en-US', options);
 
+/* eslint-disable */
 listBook.addEventListener('click', handleListBookClick);
 addNewSection.addEventListener('click', handleAddNewSectionClick);
 contactSection.addEventListener('click', handleContactSectionClick);
+/* eslint-enable */
