@@ -32,8 +32,4 @@ const changeContactSectionClick = () => {
   contactSection.style.color = 'blue';
 };
 
-listBook.addEventListener('click', changeListBookClick);
-addNewSection.addEventListener('click', changeAddNewSectionClick);
-contactSection.addEventListener('click', changeContactSectionClick);
-
 export { changeListBookClick, changeAddNewSectionClick, changeContactSectionClick };
