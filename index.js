@@ -3,6 +3,7 @@ import { changeListBookClick, changeAddNewSectionClick, changeContactSectionClic
 import { DateTime } from './node_modules/luxon/src/luxon.js';
 
 const booksList = new BooksList();
+
 const addButton = document.getElementById('add-book');
 addButton.addEventListener('click', () => {
   booksList.addNewBook();
